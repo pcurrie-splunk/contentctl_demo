@@ -1,0 +1,29 @@
+deployments:
+  acs_deployments: []
+  rest_api_deployments:
+  - description: Description for this deployment target
+    server: 127.0.0.1
+    port: 8089
+    username: admin
+    password: splunk3du
+build:
+  title: ContentPack
+  path_root: dist
+  prefix: ContentPack
+  build: 20240124095216
+  version: 0.0.1
+  name: ContentPack
+  label: Custom Splunk Content Pack
+  author_name: author name
+  author_email: author@contactemailaddress.com
+  author_company: author company
+  description: description of app
+  splunk_app: {}
+  json_objects: null
+  ba_objects: null
+build_ssa: null
+build_api: null
+enrichments:
+  attack_enrichment: false
+  cve_enrichment: false
+  splunk_app_enrichment: false
