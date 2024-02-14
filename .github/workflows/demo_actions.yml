@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: my-step
         run: echo "Hello World!"
+      - name: step-1
+        run: echo $PATH
       - name: step-2
         run: /usr/bin/python3.9 -m venv .venv
       - name: step-3
