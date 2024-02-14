@@ -7,4 +7,4 @@ jobs:
       - name: my-step
         run: echo "Hello World!"
       - name: step-2
-        run: source /home/azureuser/.venv/bin/activate
+        run: python3 --version
