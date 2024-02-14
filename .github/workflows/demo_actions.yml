@@ -7,7 +7,7 @@ jobs:
       - name: my-step
         run: echo "Hello World!"
       - name: step-2
-        run: python3.9 -m venv .venv
+        run: /usr/bin/python3.9 -m venv .venv
       - name: step-3
         run: source .venv/bin/activate
       - name: step-4
