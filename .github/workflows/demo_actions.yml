@@ -7,7 +7,7 @@ jobs:
       - name: my-step
         run: echo "Hello World!"
       - name: step-1
-        run: echo $PATH
+        run: ls -ltr /usr/bin
       - name: step-2
         run: /usr/bin/python3.9 -m venv .venv
       - name: step-3
