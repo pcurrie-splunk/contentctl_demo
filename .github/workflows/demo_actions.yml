@@ -15,4 +15,4 @@ jobs:
       - name: step-3
         run: source /home/azureuser/.venv/bin/activate
       - name: step-4
-        run: pip install contentctl
+        run: /home/azureuser/.venv/bin/pip install contentctl
