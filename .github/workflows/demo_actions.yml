@@ -7,13 +7,14 @@ jobs:
       - name: my-step
         run: echo "Hello World!"
       - name: step-1
-        run: ls -ltr /usr/bin
-      - name: step-2
         run: /usr/bin/python3.9 -m venv .venv
-      - name: step-2-1
-        run: /usr/bin/python3.9 --version
-      - name: step-3
+      - name: step-2
         run: |
           source /home/azureuser/.venv/bin/activate
           cd /home/azureuser/demo
           contentctl validate
+      - name: step-3
+        run: |
+          source /home/azureuser/.venv/bin/activate
+          cd /home/azureuser/demo
+          contentctl test
