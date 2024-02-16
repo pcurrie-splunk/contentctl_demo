@@ -15,4 +15,5 @@ jobs:
       - name: step-3
         run: |
           source /home/azureuser/.venv/bin/activate
+          cd /home/azureuser/demo
           contentctl validate
