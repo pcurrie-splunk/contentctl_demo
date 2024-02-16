@@ -11,10 +11,10 @@ jobs:
       - name: step-2
         run: |
           source /home/splunker/.venv/bin/activate
-          cd /home/azureuser/demo
+          cd /home/splunker/demo
           contentctl validate
       - name: step-3
         run: |
           source /home/splunker/.venv/bin/activate
-          cd /home/azureuser/demo
+          cd /home/splunker/demo
           contentctl test
