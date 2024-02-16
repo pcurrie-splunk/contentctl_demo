@@ -16,7 +16,7 @@ jobs:
         #operating_system: ["ubuntu-20.04", "ubuntu-22.04", "macos-latest"]
 
 
-    runs-on: ${{ matrix.operating_system }}
+    runs-on: [self-hosted,"${{ matrix.operating_system }}"]
     steps:
       - name: Install Docker for macOS
         run: |
