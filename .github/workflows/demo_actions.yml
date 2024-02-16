@@ -10,11 +10,11 @@ jobs:
         run: /usr/bin/python3.9 -m venv .venv
       - name: step-2
         run: |
-          source /home/azureuser/.venv/bin/activate
+          source /home/splunker/.venv/bin/activate
           cd /home/azureuser/demo
           contentctl validate
       - name: step-3
         run: |
-          source /home/azureuser/.venv/bin/activate
+          source /home/splunker/.venv/bin/activate
           cd /home/azureuser/demo
           contentctl test
