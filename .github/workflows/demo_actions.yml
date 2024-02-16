@@ -13,6 +13,6 @@ jobs:
       - name: step-2-1
         run: /usr/bin/python3.9 --version
       - name: step-3
-        run: source .venv/bin/activate
+        run: source /home/azureuser/.venv/bin/activate
       - name: step-4
         run: pip install contentctl
