@@ -17,4 +17,4 @@ jobs:
         run: |
           source /home/splunker/.venv/bin/activate
           cd /home/splunker/demo
-          contentctl test
+          contentctl test 
